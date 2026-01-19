@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestBase {
     public static Properties prop;
-    public   WebDriver driver;
+    public static  WebDriver driver;
     
     public TestBase() throws IOException{
         prop = new Properties();
@@ -19,7 +19,7 @@ public class TestBase {
         prop.load(ip);
     }
 
-    public WebDriver openBrowser(){
+    public static void openBrowser(){
         String browserName = prop.getProperty("browser");
         if(browserName.equals("chrome")){
             //System.setProperty("webdriver.chrome.driver", "C://Webdriver//chromedriver-win64 (2)//chromedriver-win64//chromedriver.exe");
@@ -28,8 +28,9 @@ public class TestBase {
         driver.get("https://practicetestautomation.com/practice-test-login/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    
 
-        return driver;
+        
     }
     
 }

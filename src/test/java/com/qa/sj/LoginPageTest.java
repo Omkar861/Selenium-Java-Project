@@ -4,6 +4,8 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import com.qa.sj.BaseTest.TestBase;
+import com.qa.sj.Pages.LoginPage;
+
 
 public class LoginPageTest extends TestBase{
 
@@ -12,9 +14,10 @@ public class LoginPageTest extends TestBase{
     }
 
     @Test
-    public void setup(){
+    public void setup() throws IOException{
         openBrowser();
-        //driver.get("https://practicetestautomation.com/practice-test-login/");
+        LoginPage signUp = new LoginPage();
+        signUp.Login("student", "Password123");
     }
 
     
