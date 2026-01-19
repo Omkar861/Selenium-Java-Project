@@ -2,13 +2,16 @@ package com.qa.sj.Pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.sj.BaseTest.TestBase;
 
-public class LoginPage extends TestBase{
+
+public class LoginPage{
+
+    WebDriver driver;
     
     @FindBy(xpath = "//div//input[@id='username']")
     WebElement Username;
@@ -22,7 +25,8 @@ public class LoginPage extends TestBase{
 
 
 
-    public LoginPage() throws IOException {
+    public LoginPage(WebDriver driver) {
+        
         
         PageFactory.initElements(driver, this);
      }
