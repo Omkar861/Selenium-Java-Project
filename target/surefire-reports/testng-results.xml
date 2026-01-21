@@ -2,15 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-19T22:06:49 IST" name="Surefire suite" finished-at="2026-01-19T22:06:58 IST" duration-ms="8772">
+  <suite started-at="2026-01-20T21:23:23 IST" name="Surefire suite" finished-at="2026-01-20T21:23:32 IST" duration-ms="8496">
     <groups>
     </groups>
-    <test started-at="2026-01-19T22:06:49 IST" name="Surefire test" finished-at="2026-01-19T22:06:58 IST" duration-ms="8772">
+    <test started-at="2026-01-20T21:23:23 IST" name="Surefire test" finished-at="2026-01-20T21:23:32 IST" duration-ms="8496">
       <class name="com.qa.sj.LoginPageTest">
-        <test-method signature="setup()[pri:0, instance:com.qa.sj.LoginPageTest@12405818]" started-at="2026-01-19T22:06:49 IST" name="setup" finished-at="2026-01-19T22:06:58 IST" duration-ms="8718" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.sj.LoginPageTest@70b0b186]" started-at="2026-01-20T21:23:23 IST" name="setup" finished-at="2026-01-20T21:23:29 IST" duration-ms="5988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+        <test-method signature="validCredential()[pri:0, instance:com.qa.sj.LoginPageTest@70b0b186]" started-at="2026-01-20T21:23:29 IST" name="validCredential" finished-at="2026-01-20T21:23:32 IST" duration-ms="2452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredential -->
       </class> <!-- com.qa.sj.LoginPageTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
